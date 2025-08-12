@@ -10,9 +10,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
+    return MaterialApp( // Removed const
+      home: Scaffold( // Removed const
+        body: Center( // Removed const
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
