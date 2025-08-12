@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart'; 
-///hellos
-//hiii
+///hello
+//ahhh
 void main() {
   runApp(const MainApp());
 }
@@ -29,9 +29,21 @@ class MainApp extends StatelessWidget {
                 child: Text('Press Me'),
               ),
               SizedBox(height: 16),
-              Text(
-                'New text added!',
-                style: TextStyle(color: Colors.red),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'New text added!',
+                    style: TextStyle(color: Colors.red),
+                  ),
+                  SizedBox(width: 12),
+                  ElevatedButton(
+                    onPressed: () {
+                      print('Button next to text pressed!');
+                    },
+                    child: Text('New Button'),
+                  ),
+                ],
               ),
             ],
           ),
@@ -41,4 +53,4 @@ class MainApp extends StatelessWidget {
   }
 }
 ///hello
-///hii
+///byee
