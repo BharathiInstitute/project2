@@ -29,7 +29,10 @@ class MainApp extends StatelessWidget {
                 child: Text('Press Me'),
               ),
               SizedBox(height: 16),
-              Text('New text added!'),
+              Text(
+                'New text added!',
+                style: TextStyle(color: Colors.red),
+              ),
             ],
           ),
         ),
